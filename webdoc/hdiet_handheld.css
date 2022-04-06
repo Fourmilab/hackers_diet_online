@@ -1,0 +1,12 @@
+    
+    table.login {
+        background-color: #FFFFFF;
+        color: #000000;
+        margin-left: 0px;
+        margin-right: auto;
+        border: none;
+    }
+    
+    table.login td, table.login th {
+        border: none;
+    }

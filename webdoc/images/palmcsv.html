@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>The Hacker's Diet Online: Palm Eat Watch CSV Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="/hackdiet/online/hdiet.css" type="text/css" />
+<script type="text/javascript" src="/hackdiet/online/hdiet.js">
+</script>
+<meta name="keywords" content="hacker's, diet, online, hacker, john, walker" />
+<meta name="description" content="The Hacker's Diet Online" />
+<meta name="author" content="John Walker" />
+<meta name="robots" content="noindex" />
+<style type="text/css">
+    dd {
+        text-align: justify;
+    }
+
+    dt {
+        font-weight: bold;
+        margin-top: 1ex;
+    }
+
+    table.listing {
+        color: inherit;
+        background-color: #D0D0D0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table.listing td {
+        padding: 6px;
+    }
+
+    table.listing td.titre {
+        color: inherit;
+        background-color: #FFFFA0;
+        text-align: center;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: xx-large;
+    }
+</style>
+</head>
+
+<body onload="externalLinks();">
+
+<table class="title">
+<tr>
+<td class="licon">
+
+<a href="/" class="i"><img src="/images/logo/swlogo.png"
+    class="b0" width="82" height="74"
+    alt="Fourmilab home" />
+</a>
+</td>
+<td align="center" valign="top">
+<a href="/hackdiet"><span class="title1">The Hacker's Diet <em>Online</em></span></a><br />
+<span class="title2">How to lose weight and hair<br />
+through stress and poor nutrition</span>
+</td>
+<td class="ricon">
+<a href="/hackdiet" class="i"><img src="/hackdiet/online/figures/titleicon.png"
+    class="b0" width="82" height="80"
+    alt="The Hacker's Diet Home" /></a>
+</td>
+</tr>
+</table>
+
+
+<hr />
+
+<h1 class="c">Palm Eat Watch CSV Example</h1>
+
+<table class="listing">
+<tr><td class="titre">2007-02_Palm.csv</td></tr>
+<tr>
+<td>
+<pre>
+Date,Weight,Rung,Flag,Comment
+StartTrend,75.0163,0,1177788855,1177788855
+2007-02-01,75.2,36,0,
+2007-02-02,73.8,36,1,
+2007-02-03,75.9,36,1,London
+2007-02-04,74.2,36,1,&amp;#x41c;&amp;#x43e;&amp;#x441;&amp;#x43a;&amp;#x432;&amp;#x430;
+2007-02-05,74.3,36,0,&amp;#x41c;&amp;#x43e;&amp;#x441;&amp;#x43a;&amp;#x432;&amp;#x430;
+2007-02-06,76.3,36,1,&amp;#x6771;&amp;#x4eac;
+2007-02-07,75.8,36,0,&amp;#x6771;&amp;#x4eac;
+2007-02-08,75.1,36,1,&amp;#x5e73;&amp;#x58e4;&amp;#x76f4;&amp;#x8f44;&amp;#x5e02;
+2007-02-09,74.5,36,1,&amp;#x5e73;&amp;#x58e4;&amp;#x76f4;&amp;#x8f44;&amp;#x5e02;
+2007-02-10,74.7,36,0,&amp;#x5e73;&amp;#x58e4;&amp;#x76f4;&amp;#x8f44;&amp;#x5e02;
+2007-02-11,75,36,1,&amp;#x62a;&amp;#x647;&amp;#x631;&amp;#x627;&amp;#x646;
+2007-02-12,74,36,1,&amp;#x62a;&amp;#x647;&amp;#x631;&amp;#x627;&amp;#x646;
+2007-02-13,75.5,,0,&amp;#x637;&amp;#x631;&amp;#x627;&amp;#x628;&amp;#x644;&amp;#x633;
+2007-02-14,74.3,36,1,&amp;#x637;&amp;#x631;&amp;#x627;&amp;#x628;&amp;#x644;&amp;#x633;
+2007-02-15,74.5,,0,Genève
+2007-02-16,73.9,36,0,
+2007-02-17,74.1,36,1,
+2007-02-18,75.6,36,1,
+2007-02-19,74.6,36,0,
+2007-02-20,75.3,36,1,
+2007-02-21,74.8,36,0,
+2007-02-22,74.5,36,1,
+2007-02-23,75.4,36,0,
+2007-02-24,74.9,36,1,
+2007-02-25,75,36,1,
+2007-02-26,74.9,36,0,
+2007-02-27,75.4,36,1,
+2007-02-28,75.3,36,0,
+</pre>
+</td>
+</tr>
+</table>
+
+<h2>Field Definitions</h2>
+
+<blockquote>
+<dl>
+<dt>Date</dt>
+    <dd>Complete date of the entry, which must be expressed in the
+        ISO 8601 format.  For July 20th, 1999 the date field would
+        read &ldquo;<tt>1999-07-20</tt>&rdquo;.
+        Any line in the CSV file which does not begin with a valid
+        date is ignored. This allows processing CSV files which
+        contain headings or other material in addition to log
+        entries.  Dates need not be in ascending order, but CSV
+        importing is faster if all the entries for a given month
+        appear as a block of consecutive lines.</dd>
+
+    <dt>Weight</dt>
+    <dd>Daily weight, as a decimal number.  If the log unit is set to
+        stones and pounds, the value is given in pounds.  If no
+        weight was recorded for the day, this field may be blank.
+        Weights are stored in the log using the Log unit you've chosen
+        in the <a href="../hdo.html#Settings">Settings</a>.</dd>
+
+    <dt>Rung</dt>
+    <dd>Rung in the exercise program completed for this day.
+        This is a whole number between 1 and 48.</dd>
+
+    <dt>Flag</dt>
+    <dd>This field sets the &ldquo;Flag&rdquo; checkbox in the
+        <a href="../hdo.html#MonthLog">Monthly Log</a>, which you can
+        use to record any significant daily yes or no
+        item (for example, did you work out at the gym
+        that day, or have pizza for lunch?).  If the
+        field is blank or &ldquo;0&rdquo;
+        the flag is not set; any other value sets it.</dd>
+
+    <dt>Comment</dt>
+    <dd>This field supplies arbitrary text to
+        appear in the comment field in the day's
+        <a href="../hdo.html#MonthLog">Monthly Log</a> entry.
+        If the comment
+        contains a comma, you must enclose the comment
+        field in double quotes (").  To include a quote
+        within a quoted comment, use two adjacent quotes.
+        Within a quoted comment you can use &ldquo;\&rdquo; followed
+        by three octal digits to insert an arbitrary ISO-8859 Latin-1 character
+        or &ldquo;\\&rdquo; to include a backslash itself.
+        Unicode characters outside the ISO-8859 Latin-1
+        character range will be encoded as an XHTML hexadecimal
+        character entity.</dd>
+
+</dl>
+</blockquote>
+
+<h3><a href="../hdo.html">Back to The Hacker's Diet <em>Online</em></a></h3>
+<hr />
+
+<p>
+<a href="/hackdiet/"><cite>The Hacker's Diet</cite></a><br />
+by <a href="/">John Walker</a>
+</p>
+
+</body>
+</html>

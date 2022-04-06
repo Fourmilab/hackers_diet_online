@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>The Hacker's Diet Online: Excel CSV Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="/hackdiet/online/hdiet.css" type="text/css" />
+<script type="text/javascript" src="/hackdiet/online/hdiet.js">
+</script>
+<meta name="keywords" content="hacker's, diet, online, hacker, john, walker" />
+<meta name="description" content="The Hacker's Diet Online" />
+<meta name="author" content="John Walker" />
+<meta name="robots" content="noindex" />
+<style type="text/css">
+    dd {
+        text-align: justify;
+    }
+
+    dt {
+        font-weight: bold;
+        margin-top: 1ex;
+    }
+
+    table.listing {
+        color: inherit;
+        background-color: #D0D0D0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table.listing td {
+        padding: 6px;
+    }
+
+    table.listing td.titre {
+        color: inherit;
+        background-color: #FFFFA0;
+        text-align: center;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: xx-large;
+    }
+</style>
+</head>
+
+<body onload="externalLinks();">
+
+<table class="title">
+<tr>
+<td class="licon">
+
+<a href="/" class="i"><img src="/images/logo/swlogo.png"
+    class="b0" width="82" height="74"
+    alt="Fourmilab home" />
+</a>
+</td>
+<td align="center" valign="top">
+<a href="/hackdiet"><span class="title1">The Hacker's Diet <em>Online</em></span></a><br />
+<span class="title2">How to lose weight and hair<br />
+through stress and poor nutrition</span>
+</td>
+<td class="ricon">
+<a href="/hackdiet" class="i"><img src="/hackdiet/online/figures/titleicon.png"
+    class="b0" width="82" height="80"
+    alt="The Hacker's Diet Home" /></a>
+</td>
+</tr>
+</table>
+
+
+<hr />
+
+<h1 class="c">Legacy Excel CSV Example</h1>
+
+<table class="listing">
+<tr><td class="titre">2007-02_Excel.csv</td></tr>
+<tr>
+<td>
+<pre>
+Date,,Weight,Trend,Variance,,Rung,Flag
+,,,,,,,
+,,Kilograms,,February 2007,,,
+Trend carry forward:,,,75.02,,,,
+2/1/07,Thursday,75.2,75.0,0.17,75.0,36,
+2/2/07,Friday,73.8,74.9,-1.11,75.0,36,1
+2/3/07,Saturday,75.9,75.0,0.89,74.9,36,1
+2/4/07,Sunday,74.2,74.9,-0.73,75.0,36,1
+2/5/07,Monday,74.3,74.9,-0.57,74.9,36,
+2/6/07,Tuesday,76.3,75.0,1.29,74.9,36,1
+2/7/07,Wednesday,75.8,75.1,0.71,75.0,36,
+2/8/07,Thursday,75.1,75.1,0.01,75.1,36,1
+2/9/07,Friday,74.5,75.0,-0.53,75.1,36,1
+2/10/07,Saturday,74.7,75.0,-0.30,75.0,36,
+2/11/07,Sunday,75.0,75.0,0.00,75.0,36,1
+2/12/07,Monday,74.0,74.9,-0.90,75.0,36,1
+2/13/07,Tuesday,75.5,75.0,0.54,74.9,,
+2/14/07,Wednesday,74.3,74.9,-0.59,75.0,36,1
+2/15/07,Thursday,74.5,74.9,-0.35,74.9,,
+2/16/07,Friday,73.9,74.8,-0.86,74.9,36,
+2/17/07,Saturday,74.1,74.7,-0.59,74.8,36,1
+2/18/07,Sunday,75.6,74.8,0.82,74.7,36,1
+2/19/07,Monday,74.6,74.8,-0.16,74.8,36,
+2/20/07,Tuesday,75.3,74.8,0.48,74.8,36,1
+2/21/07,Wednesday,74.8,74.8,-0.02,74.8,36,
+2/22/07,Thursday,74.5,74.8,-0.28,74.8,36,1
+2/23/07,Friday,75.4,74.8,0.55,74.8,36,
+2/24/07,Saturday,74.9,74.9,0.05,74.8,36,1
+2/25/07,Sunday,75.0,74.9,0.13,74.9,36,1
+2/26/07,Monday,74.9,74.9,0.03,74.9,36,
+2/27/07,Tuesday,75.4,74.9,0.48,74.9,36,1
+2/28/07,Wednesday,75.3,75.0,0.34,74.9,36,
+</pre>
+</td>
+</tr>
+</table>
+
+<h2>Field Definitions</h2>
+
+<blockquote>
+<dl>
+<dt>Date</dt>
+    <dd>Date of the entry in the legacy U.S. format
+        &ldquo;M/D/YY&rdquo;.  For example, July 20th,
+        1999 is written as &ldquo;<tt>7/20/99</tt>&rdquo;.
+        When importing CSV files in Excel formats, the
+        ISO 8601 format of &ldquo;YYYY-MM-DD&rdquo;
+        and the European legacy format of
+        &ldquo;DD.MM.YYYY&rdquo; are accepted as well.
+        Two digit years are assumed to be in the 1900s
+        if 89 or greater (I started <cite>The Hacker's Diet</cite>
+        in 1989) and in the 2000s otherwise.
+    </dd>
+
+<dt>Weekday</dt>
+    <dd>Day of the week in English.  This field is exported
+        for compatibility with the Excel spreadsheet design
+        and ignored on import.
+    </dd>
+
+    <dt>Weight</dt>
+    <dd>Daily weight, as a decimal number.  If no
+        weight was recorded for the day, this field
+        must contain a non-blank, non-numeric value; it
+        may be used as a comment.  When
+        exporting databases in this format, days with no
+        weight entry and no comment are indicated by
+        a value of &ldquo;<tt>---</tt>&rdquo;.</dd>
+
+    <dt>Trend</dt>
+    <dd>Current trend value as a decimal number.  This field
+        is exported for compatibility with the Excel spreadsheet
+        layout and ignored on import.</dd>
+
+    <dt>Variance</dt>
+    <dd>Current variance (<em>weight</em>&minus;<em>trend</em>) as a
+        signed decimal number.  This field is exported for
+        compatibility with the Excel spreadsheet layout and ignored on
+        import.</dd>
+
+    <dt>Last Trend</dt>
+    <dd>Last trend value for a day with a weight specified.  This
+        is a decimal number field which is used in trend computation
+        in the Excel spreadsheet and kept in a hidden column.
+        It is exported purely for compatibility and ignored on
+        import.
+    </dd>
+
+    <dt>Rung</dt>
+    <dd>Rung in the exercise program completed for this day.
+        This is a whole number between 1 and 48, blank
+        if no exercise was done on that day.</dd>
+
+    <dt>Flag</dt>
+    <dd>This field sets the &ldquo;Flag&rdquo; checkbox in the
+        <a href="../hdo.html#MonthLog">Monthly Log</a>, which you can
+        use to record any significant daily yes or no
+        item (for example, did you work out at the gym
+        that day, or have pizza for lunch?).  If the
+        field is blank or &ldquo;0&rdquo;
+        the flag is not set; a value of &ldquo;1&rdquo; sets it.</dd>
+
+</dl>
+</blockquote>
+
+
+<h3><a href="../hdo.html">Back to The Hacker's Diet <em>Online</em></a></h3>
+<hr />
+
+<p>
+<a href="/hackdiet/"><cite>The Hacker's Diet</cite></a><br />
+by <a href="/">John Walker</a>
+</p>
+
+</body>
+</html>

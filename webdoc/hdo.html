@@ -1,0 +1,1026 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>The Hacker's Diet Online</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="https://www.fourmilab.ch/hackdiet/online/hdiet.css" type="text/css" />
+<script type="text/javascript" src="https://www.fourmilab.ch/hackdiet/online/hdiet.js">
+</script>
+<meta name="keywords" content="hacker's, diet, online, hacker, john, walker" />
+<meta name="description" content="The Hacker's Diet Online" />
+<meta name="author" content="John Walker" />
+<meta name="robots" content="index" />
+<style type="text/css">
+    p {
+        text-align: justify;
+    }
+
+    /* Float-clearing breaks. */
+
+    br.cb {
+        clear: both;
+    }
+
+    br.cl {
+        clear: left;
+    }
+
+    br.cr {
+        clear: right;
+    }
+
+    dd {
+        text-align: justify;
+    }
+
+    dt {
+        margin-top: 1ex;
+        font-weight: bold;
+    }
+
+    h1.navbar {
+        background-color: #6060FF;
+        color: #FFFFFF;
+        width: 20%;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: x-large;
+        text-align: center;
+        margin-left: 40%;
+    }
+
+    /* Floating images */
+
+    img.left {
+        border: 0px;
+        float: left;
+        margin-right: 12px;
+    }
+
+    img.right {
+        border: 0px;
+        float: right;
+        margin-left: 12px;
+    }
+
+    span.shrill {
+        color: #FF0000;
+        background-color: inherit;
+        font-weight: bold;
+    }
+
+    table.abbrev {
+        color: inherit;
+        background-color: #F0F0A0;
+        float: right;
+        font-size: smaller;
+        margin-left: 6px;
+    }
+
+    table.abbrev td {
+        text-align: center;
+    }
+
+    th.l {
+        text-align: left;
+    }
+
+    ul.download {
+        font-size: larger;
+        margin-top: 0px;
+        margin-left: 3em;
+    }
+</style>
+</head>
+
+<body onload="externalLinks();">
+
+<table class="title">
+<tr>
+<td class="licon">
+
+<a href="/" class="i"><img src="https://www.fourmilab.ch/images/logo/swlogo.png"
+    class="b0" width="82" height="74"
+    alt="Fourmilab home" />
+</a>
+</td>
+<td align="center" valign="top">
+<a href="https://www.fourmilab.ch/hackdiet"><span class="title1">The Hacker's Diet <em>Online</em></span></a><br />
+<span class="title2">How to lose weight and hair<br />
+through stress and poor nutrition</span>
+</td>
+<td class="ricon">
+<a href="https://www.fourmilab.ch/hackdiet" class="i"><img src="https://www.fourmilab.ch/hackdiet/online/figures/titleicon.png"
+    class="b0" width="82" height="80"
+    alt="The Hacker's Diet Home" /></a>
+</td>
+</tr>
+</table>
+
+
+<hr />
+
+<h1>Introduction</h1>
+
+<p>
+The computer tools associated with my 1991 book <cite><a href="https://www.fourmilab.ch/hackdiet/"
+rel="Target:Fourmilab_HDO_Aux">The Hacker's Diet</a></cite> were originally developed as
+<a href="https://www.fourmilab.ch/hackdiet/comptoolsExcel.html"
+rel="Target:Fourmilab_HDO_Aux">spreadsheets and macros</a> for Microsoft Excel.
+In 2000, I released a version of the computer tools for
+<a href="https://www.fourmilab.ch/hackdiet/palm/" rel="Target:Fourmilab_HDO_Aux">PalmOS handheld
+devices</a>, with a desktop component able to create HTML documents from weight and
+exercise logs kept on the handheld.
+</p>
+
+<p>
+For a long time, I've wanted to move away from these proprietary platforms, and
+given the ubiquity of the Web, a browser-based Web application seemed an attractive
+solution&mdash;no longer would the user be tied to a particular computer or PDA; log
+entries could be updated and consulted from any machine with access to the Web.
+After a protracted on-and-off development process occupying more than a calendar
+year, <b>The Hacker's Diet <em>Online</em></b> is now available.
+</p>
+
+<h1>Creating an Account and Signing In</h1>
+
+<p>
+To create an account,
+visit the main
+Hacker's Diet <em>Online</em>
+<a href="https://www.fourmilab.ch/cgi-bin/HackDiet/" rel="Target:Fourmilab_HDO_Aux">Sign In</a>
+page:
+</p>
+
+<p class="centred">
+<tt><b><a href="https://www.fourmilab.ch/cgi-bin/HackDiet/"
+    rel="Target:Fourmilab_HDO_Aux">https://www.fourmilab.ch/cgi-bin/HackDiet/</a></b></tt>
+</p>
+
+<p class="centred">
+<img src="dfig/signin.png" width="512" height="211" alt="Sign In" />
+</p>
+
+<p>
+Click the &ldquo;Create a New Account&rdquo; button, and the new account form
+will be displayed.
+</p>
+
+<p class="centred">
+<img src="dfig/newacct.png" width="512" height="333" alt="Create New Account form" />
+</p>
+
+<p>
+Choose a user name
+and password,
+which is entered twice to ensure it's correct (the &ldquo;Match&rdquo; box
+will be checked if the password and confirmation agree).  The &ldquo;Strength&rdquo; field
+displays an estimate of the security of the password on a scale of 0 to 10.
+Your E-mail address is required so that a replacement password can be
+supplied in case you forget your original password.  Your E-mail address
+will not be disclosed to third parties, and Fourmilab will not send you
+junk mail.  You can, if you wish, enter your name; this is optional.  If you
+enter your height, it will be used to compute the scientifically
+dubious
+<a href="http://www.cdc.gov/nccdphp/dnpa/bmi/"
+   rel="Target:Fourmilab_HDO_Aux">Body
+Mass Index</a>.  You can keep your log entries in units of kilograms,
+pounds, or stones and pounds, and you can change the unit in which
+weights are entered and displayed independent of units in the
+database.  Similarly, energy balance can be expressed in (kilo)calories
+or kilojoules.  You can choose whether numbers are displayed with
+a period or comma as the decimal separator character.
+If you want to make your logs visible to the public
+under an automatically-assigned pseudonym, check the &ldquo;Public
+name&rdquo; box.  All of these items, with the exception of the
+User Name, can be changed from the <a href="#Settings">Settings</a>
+form, so if you're unsure about any of the optional items, you
+can leave them until later.
+</p>
+
+<p>
+All text items in The Hacker's Diet <em>Online</em>, including
+user names and passwords, can contain any
+<a href="http://unicode.org/"
+   rel="Target:Fourmilab_HDO_Aux">Unicode</a> graphic characters
+whatsoever; if your name happens to be &ldquo;&#25104;&#21513;&#24605;&#27735;&rdquo;
+or you fancy a password of
+&ldquo;&#1575;&#1604;&#1580;&#1576;&#1585;&nbsp;&#1051;&#1086;&#1073;&#1072;&#1095;&#1077;&#769;&#1074;&#1089;&#1082;&#1080;&#1081;&rdquo;,
+go right ahead&mdash;if you can type it, and your browser can display it,
+The Hacker's Diet <em>Online</em> can handle it.
+</p>
+
+<p>
+After creating your new account, log in using the user name and password
+you selected.  You'll be taken to a blank monthly log for the current month.
+Checking the &ldquo;Handheld device&rdquo; box selects formatting
+appropriate to devices with small screens such as personal digital
+assistants and mobile telephones.  On such devices you can bookmark
+the special URL:
+</p>
+
+<p class="centred">
+<tt><b><a href="https://www.fourmilab.ch/cgi-bin/HackDiet/?handheld=y"
+    rel="Target:Fourmilab_HDO_Aux">https://www.fourmilab.ch/cgi-bin/HackDiet/?handheld=y</a></b></tt>
+</p>
+
+<p>
+which automatically checks the &ldquo;Handheld device&rdquo; box and displays
+a sign in page adapted for a small screen.
+The &ldquo;Remember me&rdquo; box
+causes a &ldquo;cookie&rdquo; to be stored in your browser which
+permits you to sign in without entering your user name and
+password; don't select this option if you are signing in from a
+public terminal or somebody else's computer.
+</p>
+
+<p>
+At the top of every page in The Hacker's Diet <em>Online</em> is a
+navigation bar.  The following sections show the functions available on
+the various pages accessible from the bar.
+</p>
+
+
+<h1 class="navbar"><a class="i" name="MonthLog">Log</a></h1>
+
+<p class="centred">
+<img src="dfig/monthlog.png" width="440" height="462" alt="Monthly Log form" />
+</p>
+
+<p>
+This form is used to enter items in a monthly log.  When you sign in,
+the current month's log is displayed.
+</p>
+
+<p>
+When you enter a weight, the trend is calculated for
+that day and the Variance (difference between today's weight and
+the trend) appears in the &ldquo;Var.&rdquo; field, positive if the weight is
+above the trend, negative if below.  Weight and variance are
+displayed to one decimal place for kilograms and pounds.  When
+stones (a predominantly British unit of weight equal to 14
+pounds) are chosen as the weight unit, weight is shown in stones
+and pounds separated by a space; for example, a weight of 152.7
+pounds would appear as &ldquo;10 12.7&rdquo;.  When weight is set to
+stones, variance continues to be shown in pounds&mdash;a variance of
+one or more stones would indicate something seriously amiss!
+</p>
+
+<p>
+If you're following the
+<a href="https://www.fourmilab.ch/hackdiet/e4/exercise.html" rel="Target:Fourmilab_HDO_Aux">exercise
+program</a>
+presented in <cite>The Hacker's Diet</cite>, use the &ldquo;Rung&rdquo; field to record
+which rung on the exercise ladder you completed that day.  You can
+use the &ldquo;Flag&rdquo; field to mark any recurrent event you're interested
+in keeping track of on an ongoing basis, for example, whether you
+found the time for a game of tennis or had an ice cream snack
+before turning in for the night.  The &ldquo;Comments&rdquo; field can be
+used to record any text you like (up to 4096 characters).
+</p>
+
+<p>
+<img src="images/bulb.png" width="20" height="27" class="left" alt="*" />
+To duplicate the previous nonblank item in a column, enter a single
+period in the field. This is handy for entering exercise rung entries,
+which change infrequently and rarely at all once you've reached your
+goal.  If you use the comments field to note when you're out of town,
+you can just enter a period when you're in the same place as the day
+before. If you must enter a comment consisting of a single period,
+enter a space after the period.
+<br class="cl" />
+</p>
+
+<p>
+<img src="images/bulb.png" width="20" height="27" class="left" alt="*" />
+<b>Abbreviated Weight Entry.</b>
+Weight generally changes little from day to day, but
+if your scale reads to the nearest 100 or 200 grams
+(or the equivalent in pounds), a given day's weight will
+rarely be identical to that of the day before.  This limits
+the utility of the field copying trick discussed in the last
+paragraph.  The monthly log permits you to abbreviate
+weight entries which differ slightly from the last.  If you
+enter a decimal point followed by
+a single digit, the previous weight entry will be copied with
+the decimal digit replaced by the digit you specified.  For example,
+if yesterday's weight was 73.8 kg and you enter &ldquo;.6&rdquo;, today's
+weight will be entered as 73.6 kg.  Similarly, entering a single
+digit followed by a decimal point and another digit
+copies the previous weight, replacing its units and decimal place with
+those you entered.
+If yesterday you weighed 158.2 pounds and today you tipped the scale
+at a mere 157.9, you need only enter &ldquo;7.9&rdquo; for today's weight.  If
+the decimal place is zero, you need not enter it&mdash;simply enter
+the units digit followed by a decimal point.
+</p>
+
+<table border="border" class="abbrev">
+<tr>
+<th>Previous <br /> Weight</th>
+<th>You <br /> Enter</th>
+<th>New <br /> Weight</th>
+</tr>
+<tr><td> 11 &nbsp; 9.3   </td>
+    <td>       6.    </td>
+    <td>      11 &nbsp; 6.0</td>
+</tr>
+<tr><td> 11 &nbsp; 6.2    </td>
+    <td>       4.8   </td>
+    <td>      11 &nbsp; 4.8</td>
+</tr>
+<tr><td> 10 &nbsp; 11.7   </td>
+    <td>       2.    </td>
+    <td>      10 &nbsp; 12.0</td>
+</tr>
+<tr><td> 10 &nbsp; 11.5   </td>
+    <td>       9.    </td>
+    <td>      10 &nbsp; 9.0</td>
+</tr>
+<tr><td> 10 &nbsp; 9.9    </td>
+    <td>       10.2  </td>
+    <td>      10 &nbsp; 10.2</td>
+</tr>
+</table>
+
+<p>
+When the weight unit is set to stones you may use the abbreviations
+above to change the pounds and decimal place of the previous
+stone and pound display.  In addition, when the display unit is set to
+stones, if the previous entry has a pounds field between 10 and
+13 and you enter a single digit, decimal point, and optional
+decimal digit, the action taken depends on the units digit you
+enter.  If it's between 0 and 3, it replaces the last digit of
+the pounds in the last entry, but if the digit is 4 or greater
+(which is invalid in a stones and pounds display), that
+digit replaces the two digit pounds field in the
+previous entry.  This reduces the typing required if your
+weight happens to fluctuate around <em>X</em> stones 10.  In
+addition, when the display unit is stones, you may enter two
+digits followed by a decimal point and an optional decimal
+digit to replace the pounds field of the last stones and pounds
+entry; you must enter the decimal point to distinguish the
+entry from one denoting an even number of stones.  The examples
+in the table at the right should clarify how this works in
+practice.
+<br class="cb" />
+</p>
+
+<p>
+<img src="images/bulb.png" width="20" height="27" class="left" alt="*" />
+<b>Incrementing and Decrementing Exercise Rung.</b>
+To increment the exercise rung by one from the most recent
+entry, enter a plus sign in the Rung field.  To decrement the
+rung by one, enter a minus sign.
+<br class="cl" />
+</p>
+
+<p>
+Each monthly log page includes a chart.
+The weight and trend are plotted in the
+&ldquo;<a href="https://www.fourmilab.ch/hackdiet/e4/signalnoise.html#Fa79" rel="Target:Fourmilab_HDO_Aux">Floats
+and Sinkers</a>&rdquo; form described in the book: the trend is drawn as a
+solid red line with each day's weight shown as a diamond attached to the
+trend by a green line which shows the extent to which it is above or below the
+trend.  Days for which the &ldquo;Flag&rdquo; box is checked in the log are
+shown as yellow diamonds; days not flagged are filled with white.
+The vertical axis at the left gives the weight scale and the
+days of the month are shown on the horizontal axis.  Below the chart,
+a snapshot analysis of last week's weight gain/loss and calorie
+excess/deficit is given; for a longer term analysis visit the
+<a href="#Trend">Trend</a> page.  If one or more days of the month
+have the Flag box checked, the percentage of flagged days
+follows the calorie balance.
+</p>
+
+<p>
+If the monthly log contains any entries in the exercise Rung
+column, a blue line is plotted showing daily
+exercise level (blank for any day the Rung is not filled
+in) with a Rung scale from 1 to 48 at the right of the chart.
+The scale is adjusted so the last rung in the chart is explicitly
+labelled.
+</p>
+
+<p>
+If the month displayed is within or after the conclusion of a
+diet plan created by the <a href="#DietCalc">Diet Calculator</a>,
+and the user has indicated the plan should appear in the chart,
+the plan is drawn as a dashed yellow line, with dates after the end
+of the plan shown as a horizontal line at the plan's
+goal weight.  By comparing the actual trend as it evolves with
+the plan, you can evaluate your progress toward the goal.  After
+arriving at the goal, the constant goal weight provides a reference
+for evaluating the subsequent evolution of the trend.
+</p>
+
+<p>
+You can navigate to earlier and
+later months by clicking the navigation buttons to the left and right
+of the month title.
+</p>
+
+<h1 class="navbar"><a class="i" name="History">History</a></h1>
+
+<p class="centred">
+<img src="dfig/history.png" width="333" height="275" alt="Historical View" />
+</p>
+
+<p>
+The &ldquo;History&rdquo; item on the navigation bar displays
+a calendar of monthly logs present in the database.  Click on any
+month to display its monthly log.
+</p>
+
+<h1 class="navbar"><a class="i" name="Chart">Chart</a></h1>
+
+<p class="centred">
+<img src="dfig/chartws.png" width="512" height="547" alt="Chart Workshop" />
+</p>
+
+<p>
+Historical charts, covering standard periods of one month, a quarter (three months),
+six months, and one year ending at the present,
+or a custom interval of your choosing can be displayed
+by setting the controls below the chart.
+An historical chart showing the trend over the requested duration
+(assuming the requisite log entries are present) is plotted
+and a trend analysis for the period charted is shown at
+the bottom of the chart.  As with monthly charts, the exercise
+rung (if used) is plotted as a blue line and the
+<a href="#DietCalc">Diet Plan</a> (if it covers any portion
+of the charted period and the user has checked the box to
+request it be plotted) is shown as a dashed yellow line.
+</p>
+
+<p>
+Historical charts covering a one month interval differ from charts in
+the monthly log in that the latter always show days of a single month,
+while one month historical charts display a period which may span
+month boundaries.  In the early days of a month a one month historical
+chart may give you a better perspective on the evolution of the trend
+than a monthly chart which only shows a handful of days.  Short term
+historical charts plot weight and flag entries as &ldquo;floats and
+sinkers&rdquo; in the same form as monthly charts, but these are
+excluded from longer-term charts in which they would create such
+clutter as to render them useless. In such charts, as in the example
+above, the weight is plotted as a grey line. Over periods of a quarter
+or longer, only the trend really matters anyway.
+</p>
+
+<h1 class="navbar"><a class="i" name="Trend">Trend</a></h1>
+
+<p class="centred">
+<img src="dfig/trendan.png" width="496" height="388" alt="Trend Analysis" />
+</p>
+
+<p>
+The Trend Analysis page uses information in current and
+prior monthly logs to calculate your average weekly weight loss
+or gain and the corresponding
+average daily calorie deficit or excess.  For each
+time period linear regression is used to
+<a href="https://www.fourmilab.ch/hackdiet/e4/signalnoise.html#Fa83" rel="Target:Fourmilab_HDO_Aux">fit a straight-line trend</a>
+and the rate of change in weight and calorie balance are determined
+from its slope
+<a href="https://www.fourmilab.ch/hackdiet/e4/pencilpaper.html#Fa236" rel="Target:Fourmilab_HDO_Aux">as
+described in the book</a>.  For each interval, the minimum, average (arithmetic
+mean), and maximum values of the weight trend are shown.
+</p>
+
+<p>
+The standard intervals all end at the present.  You can analyse the trend between
+any two dates in the database by checking the &ldquo;Custom&rdquo; box and
+specifying the starting and ending dates.
+</p>
+
+<h1 class="navbar"><a class="i" name="Settings">Settings</a></h1>
+
+<p class="centred">
+<img src="dfig/settings.png" width="512" height="356" alt="Modify Account Settings" />
+</p>
+
+<p>
+The &ldquo;Modify Account Settings&rdquo; page allows you to change
+any of the settings you specified when you created your account apart
+from the User Name, which is the fundamental identification of the
+account.
+</p>
+
+<dl>
+<dt>Password</dt>
+    <dd>To change your password, enter the desired new password in the
+        &ldquo;Password&rdquo; and &ldquo;Retype password&rdquo; fields.
+        The &ldquo;Match&rdquo; box indicates if the two fields match,
+        as required.  The &ldquo;Strength&rdquo; field shows an estimate of
+        the degree of security of the password on a scale of one to ten.</dd>
+
+<dt>E-mail address</dt>
+    <dd>The E-mail address is used in case you forget your password.
+        By entering your user name and this E-mail address, a new password
+        will be generated and sent to you at this address.  The E-mail address
+        is also used as the address to which replies to
+        <a href="#Feedback">feedback messages</a> will be sent.
+        Unlike every other text field in The Hacker's Diet <em>Online</em>,
+        the E-mail address is restricted to characters valid in an
+        Internet E-mail address.</dd>
+
+<dt>First, Last, and Middle Name/Initial</dt>
+    <dd>These optional fields allow you to specify your real name or a
+    fantasy pseudonym, if you prefer; you can change them at any time,
+    and you're free to use whatever convention you like for
+    your name, and any Unicode character within it.</dd>
+
+<dt>Height</dt>
+    <dd>You can specify your height in either centimetres or feet and
+        inches.  If specified, the height will be used to compute
+        the so-called <a href="http://www.cdc.gov/nccdphp/dnpa/bmi/"
+            rel="Target:Fourmilab_HDO_Aux">Body Mass Index</a>,
+        which is notorious for deeming champion athletes in a
+        variety of demanding sports &ldquo;obese&rdquo; due to
+        their muscle mass.  Still, some people give credence to
+        this number, and if you'd like to see it, we'll be happy to
+        compute it.</dd>
+
+<dt>Weight unit</dt>
+    <dd>
+        <dl>
+            <dt>Log</dt>
+                <dd>This item selects the unit of weight in which
+                    monthly logs are kept.  Set it to the unit you use
+                    most frequently. You're free to change the log
+                    unit at any time, but the change only affects logs
+                    created subsequent to the change.  Existing logs
+                    remain in the unit in effect at the time of their
+                    creation.</dd>
+
+            <dt>Display</dt>
+                <dd>Regardless of the log unit, you can display weight
+                    in the <a href="#MonthLog">Monthly Log</a>, <a
+                    href="#Chart">Chart</a>, and <a
+                    href="#Trend">Trend Analysis</a> forms in any of
+                    the available units.  Changing the Display unit
+                    does not convert the log to that unit, so you may
+                    change it as often as you wish without fear of
+                    losing precision.  When the Display unit differs
+                    from the Log unit, be sure to enter weight in the
+                    <a href="#MonthLog">Monthly Log</a> form in the
+                    <em>Display unit</em>&mdash;it wouldn't make sense
+                    to write a number in kilograms at the end of a
+                    table displayed in pounds! Your entry is stored,
+                    however, in the log unit.</dd>
+        </dl>
+    </dd>
+
+<dt>Energy unit</dt>
+    <dd>
+        <img src="images/kjfood.png" class="left" width="256" height="153"
+            alt="European food label" />
+        In Europe, the energy content of food is often given in
+        kilojoules, the SI unit of energy, instead of
+        (kilo)calories; one calorie
+        is equal to about 4.18 kilojoules.  If you're used to
+        thinking in kilojoules instead of calories, set the
+        energy unit accordingly.  When the energy unit is set to
+        kilojoules (abbreviated "kJ"), energy balance values in the
+        <a href="#MonthLog">Monthly Log</a>, <a href="#Chart">Chart</a>,
+        <a href="#Trend">Trend Analysis</a>, and
+        <a href="#DietCalc">Diet Calculator</a> will use that unit.
+        (When a kJ value is entered in the diet calculator, it will
+        be rounded to the nearest integral calorie equivalent.)
+        Changing the energy unit only affects how food values
+        are displayed in the various forms&mdash;you may change it as
+        frequently as you wish without loss of precision in the
+        database.
+        <br class="cl" />
+    </dd>
+
+<dt>Decimal character</dt>
+    <dd>
+        You can choose whether numbers are displayed with a
+        period (&ldquo;<tt>.</tt>&rdquo;) or comma
+        (&ldquo;<tt>,</tt>&rdquo;) as the separator between
+        units and decimal places.  Regardless of this setting,
+        you can always enter numbers with <em>either</em> a
+        period or comma as the decimal separator.
+    </dd>
+
+<dt>Public name</dt>
+    <dd>
+        If the &ldquo;Pseudonym&rdquo; box is checked, your logs
+        (with comments elided), charts, and trend information will
+        be visible to other users under the indicated automatically
+        generated pseudonym.  To keep your information private, uncheck
+        the box.  If you'd like to have a new pseudonym assigned, check
+        the &ldquo;Assign new pseudonym?&rdquo; box and see if you
+        like the result any better.
+    </dd>
+
+</dl>
+
+<h1 class="navbar"><a class="i" name="Utilities">Utilities</a></h1>
+
+<p class="centred">
+<img src="dfig/util3.png" width="269" height="414" alt="Utilities" />
+</p>
+
+<p>
+The &ldquo;Utilities&rdquo; page provides access to all of the
+functions of The Hacker's Diet <em>Online</em>: those available
+directly from the navigation bar and less frequently used facilities
+linked only to this grab-bag of a page.  Only functions available
+exclusively from the Utilities page are discussed below.
+</p>
+
+<h2><a class="i" name="DietCalc">Diet calculator</a></h2>
+
+<p class="centred">
+<img src="dfig/dietcalc.png" width="486" height="381" alt="Diet Calculator" />
+</p>
+
+<p>
+The Diet Calculator allows you to
+<a href="https://www.fourmilab.ch/hackdiet/e4/losingweight.html#Fa166" rel="Target:Fourmilab_HDO_Aux">plan
+a change in weight</a>, either
+loss or gain, exploring the relationship between the
+calorie deficit or excess and the duration of the diet.  The resulting
+diet plan can optionally be shown in the
+monthly and historical charts, allowing you to monitor
+your progress and to display a constant target weight at
+the conclusion of the diet.
+</p>
+
+<p>
+The Diet Calculator is displayed from &ldquo;Utilities&rdquo;
+page of the navigation bar.
+When you first display the Diet Calculator, the daily
+calorie balance is set to &minus;500 calories per day (which
+results in the loss of about a pound per week, as discussed
+in the book), and the initial weight to the most recent
+trend value, rounded to the nearest whole number.  Weights
+are shown in the display unit selected in the
+account settings, which may be temporarily changed
+with the selection box to the right of the &ldquo;Initial Weight&rdquo;.
+The initial goal weight is arbitrarily set to 5
+kilograms or 10 pounds less than the starting weight;
+adjust this to your
+<a href="https://www.fourmilab.ch/hackdiet/e4/losingweight.html#Fa165" rel="Target:Fourmilab_HDO_Aux">personal
+weight goal</a>.
+The default starting date of the diet is the current date; The
+&ldquo;Diet duration&rdquo; fields will then show the duration of the
+diet in weeks and months and the &ldquo;End date&rdquo; when you may
+expect to achieve the goal weight.
+</p>
+
+<p>
+This form is fully associative&mdash;you may change any quantity
+and the form will recalculate the others accordingly.  Setting
+the daily calorie balance adjusts the weight change per week,
+duration, and end date of the diet.  The calorie balance should
+be negative if you wish to lose weight and positive if your
+intention is to gain weight.  You may change the initial weight
+and goal weight to any values you wish, which adjusts the desired
+weight change and recomputes the duration of the diet.  If you change
+the desired weight change, the goal weight is modified to reflect
+the new difference from the initial weight and the diet duration
+recalculated.  Changing the start date adjusts the end date based
+on the estimated duration of the diet.  Adjusting the weight change
+per week, weeks or months to go, or the end date modifies the
+daily calorie balance to achieve the desired weight change in
+the specified period of time.
+</p>
+
+<p>
+The values you specify in the Diet Calculator are saved and
+reappear when you return to the Diet Calculator.  If you
+check the &ldquo;Plot plan in chart&rdquo; box, the course of the planned
+diet is shown as a dashed yellow line in the
+chart displays for the duration
+of the diet and subsequently as a horizontal dashed line representing
+your weight maintenance goal.  If you find this distracting, simply
+uncheck the box.
+</p>
+
+<p>
+<img src="images/bulb.png" width="20" height="27" class="left" alt="*" />
+To plot the goal weight in charts without the sloping diet
+plan, set the initial and goal weights to the same value and the
+start date before the first month in the log.
+<br class="cl" />
+</p>
+
+<h2><a class="i" name="BadgeImage">Configure Web page badge image</a></h2>
+
+<p>
+<img src="figures/badge_sample.png" width="200" height="78" class="right" alt="*" />
+If you'd like to make your progress visible to visitors of your Web
+page or log, this item allows you to configure a &ldquo;badge&rdquo;
+in the form of a small, dynamically generated image which you can
+include on your personal Web pages.  The image appears like the sample
+to the right and shows the date of your most recent weight log entry
+and the weight as of that date.  Below, the analysis of a trend whose
+duration you can select between one week and one year is presented,
+with the daily energy (calorie or kilojoule) excess or deficit and
+weekly weight gain or loss estimated from the trend.  Badge generation
+is initially disabled; when you enable it by choosing a trend analysis
+duration, you're provided with XHTML/HTML code which you can copy and
+paste into your Web page to display the badge.  The badge image is
+automatically updated when you make any relevant change to a log; the
+image displayed on your page will automatically reflect your most
+recent log entry.  You can disable badge generation at any time by
+setting the trend interval to &ldquo;Disable badge&rdquo;.
+<br class="cr" />
+</p>
+
+<h2><a class="i" name="PaperLogForms">Print paper log forms</a></h2>
+
+<p>
+Many people, myself included, prefer to log their weight and exercise
+on paper and then transfer the data to the computer later. To generate
+paper log forms, click the &ldquo;Print paper log forms&rdquo; item.
+A form will appear which allows you to specify the first and last
+month and year of the logs to be printed.  When you click
+&ldquo;Generate&rdquo;, a document containing the requested log forms
+opens in a new window, and a print request is automatically queued a
+second later (allowing the document to render in the browser).  (If
+JavaScript is disabled, you'll have to manually print the document and
+navigate back to the request page with the &ldquo;Back&rdquo;
+button.)  The paper log form document uses a paged media style sheet
+to insert page breaks between each monthly log; it's up to your
+browser to handle this style element properly&mdash;if it doesn't,
+there's nothing I can do about it.
+</p>
+
+<h2><a class="i" name="TrendRecalc">Recalculate trend carry-forward</a></h2>
+
+<p>
+The trend at the start of a month depends upon the trend at the end of
+the preceding month, and so on all the way back to the first month in
+the database.  Because trend computation is a computationally
+intensive task, The Hacker's Diet <em>Online</em> stores the trend
+carried forward from the previous month with the log data for each
+month, avoiding the need to compute the trend for previous months
+except in unusual situations (for
+example, if you <a href="#Import">import a CSV or XML file</a>
+containing data for a month in the past, or enter or modify data for a
+prior month).  This is all handled automatically.
+</p>
+
+<p>
+These stored trend values are &ldquo;fragile&rdquo; in the sense that
+if a hardware or software error should manage to clobber the trend, it
+will result in incorrect trend and variance computation for all
+entries for the month, and there's no direct way to enter the correct
+trend carry forward to replace the bad value.  To guard against such
+an eventuality, The Hacker's Diet <em>Online</em> provides the ability
+to completely recompute all trends from the fundamental log entries.
+You'll probably never need to use this feature, but just in
+case you do, it's there.
+</p>
+
+<h2><a class="i" name="DeleteCookies">Forget persistent logins</a></h2>
+
+<p>
+When you check the &ldquo;Remember me&rdquo; box on the Sign In page,
+a &ldquo;persistent login cookie&rdquo; is stored in your Web browser
+so that you may subsequently log in from that browser and computer
+without specifying your user name and password.  If you use multiple
+browsers and/or computers, separate persistent logins are maintained
+for each.  This item invalidates all stored persistent logins for your
+account. The next time you wish to sign in from any computer or
+browser, you will have to specify your user name and password.  You
+can use this item when you've accidentally signed in from somebody
+else's computer or a public terminal with &ldquo;Remember me&rdquo;
+and wish to make sure somebody can't access your account from
+that machine.
+</p>
+
+<h2><a class="i" name="Export">Export database as CSV or XML</a></h2>
+
+<p class="centred">
+<img src="dfig/export.png" width="389" height="297" alt="Export Log Database" />
+</p>
+
+<p>
+You can export your Hacker's Diet <em>Online</em> databases in
+a variety of formats, including CSV files which you can import
+into the Palm Eat Watch application and even the legacy Excel
+spreadsheets.  If your interest is in making a local backup of
+your files on the Fourmilab server, the best choices are
+The Hacker's Diet <em>Online</em>'s native XML and extended
+CSV formats, which preserve all information in the online
+databases.  The XML export format is specified by a
+<a href="images/hdoxml_dtd.html"
+        rel="Target:Fourmilab_HDO_Aux">Document Type Definition</a>
+which permits it to be used with a
+validating XML parser and includes a
+<a href="images/hdoxml_css.html"
+        rel="Target:Fourmilab_HDO_Aux">style sheet</a> which allows
+XML export files to
+<a href="images/2007-02.xml"
+        rel="Target:Fourmilab_HDO_Aux">be displayed</a>
+in an XML-aware browser.  The
+following links show examples of single-month exports in the
+various formats.
+</p>
+
+<ul>
+    <li><a href="images/hdoxml.html"
+        rel="Target:Fourmilab_HDO_Aux">Hacker's Diet <em>Online</em> XML</a>
+            <ul>
+                <li><a href="images/hdoxml_dtd.html"
+                    rel="Target:Fourmilab_HDO_Aux">Document Type Definition</a></li>
+                <li><a href="images/hdoxml_css.html"
+                    rel="Target:Fourmilab_HDO_Aux">Style Sheet</a></li>
+                <li><a href="images/2007-02.xml"
+                    rel="Target:Fourmilab_HDO_Aux">XML Formatted by Style Sheet</a></li>
+            </ul>
+    </li>
+    <li><a href="images/hdocsv.html"
+        rel="Target:Fourmilab_HDO_Aux">Hacker's Diet <em>Online</em> CSV</a></li>
+    <li><a href="images/palmcsv.html"
+        rel="Target:Fourmilab_HDO_Aux">Palm Eat Watch CSV</a></li>
+    <li><a href="images/excelcsv.html"
+        rel="Target:Fourmilab_HDO_Aux">Legacy Excel CSV</a></li>
+</ul>
+
+<h2><a class="i" name="Import">Import CSV or XML database</a></h2>
+
+<p class="centred">
+<img src="dfig/import.png" width="512" height="503" alt="Import CSV or XML file" />
+</p>
+
+<p>
+If you've been keeping Hacker's Diet logs in Excel or another
+spreadsheet or database package, you may want to transfer your
+existing logs to the online application. To do this, save the logs you
+wish to upload in Comma Separated Value (<b><tt>.csv</tt></b>) format.
+If you're using a different program to keep your logs, be careful the
+columns in the CSV file are the same as those used by the Excel macros
+or the Palm Eat Watch program.  Only the Date, Weight, Rung, Flag, and Comment
+columns are imported&mdash;the other fields are recomputed as
+required.  In logs using the conventions of the Excel macros, comments
+appear as non-numeric entries in the Weight column; it isn't possible
+to attach a comment to a day for which a weight is entered.
+</p>
+
+<p>
+You can import logs in any of the four export formats
+described above.  For CSV imports, you can even mix formats
+within a single import, as long as the header records are
+included before each sequence being imported.  An XML export
+file must be imported by itself, but may contain any number of
+months of log entries.  By default, items from the file being
+imported will not overwrite existing log entries; to permit
+imported data to override entries in the online database, check
+the &ldquo;Allow overwrite&rdquo; box in the import section you're
+using.
+</p>
+
+<h2><a class="i" name="Native">Download native database backup</a></h2>
+
+<p>
+The data you enter into The Hacker's Diet <em>Online</em> is
+stored on the Fourmilab server farm, which has multiple
+redundant components to prevent single-point failures.  All
+data are backed up nightly to tapes, which are kept
+off-site and never reused.  Still, it's nice have
+your own private copy of the original data, and you can obtain one
+with this item, which allows you to download a
+ZIPped archive named
+&ldquo;<tt>hackdiet_log_backup_</tt><em>YYYY</em><tt>-</tt><em>MM</em><tt>-</tt><em>DD</em><tt>.zip</tt>&rdquo;
+which contains a collection of
+<em>YYYY</em><tt>-</tt><em>MM</em><tt>.hdb</tt> files, one for each
+monthly log you've entered.  These files are in the
+native data format used by
+The Hacker's Diet <em>Online</em>, and contain all the
+information present on the server.  Users who wish to install
+The Hacker's Diet <em>Online</em> application on their own
+server can install these files directly into their user
+directory on that machine.
+</p>
+
+<h2><a class="i" name="BrowsePub">Browse public user accounts</a></h2>
+
+<p class="centred">
+<img src="dfig/browsepub.png" width="512" height="123"
+    alt="Browse Public Accounts" />
+</p>
+
+<p>
+Ever since writing <cite>The Hacker's Diet</cite>, I have
+frequently remarked that one of the best things about
+writing a diet book is that it provides a tremendous
+incentive not to regain the weight you lost; if you do,
+you'll be the laughingstock of all your readers.  The
+Hacker's Diet <em>Online</em> provides a similar
+incentive to confident participants&mdash;they can,
+if they wish, make their progress visible to other
+users of the application (but not the general public)
+under an automatically assigned pseudonym.  (You can't
+choose the pseudonym, but if you don't like the one
+you were given, you can request a different one from
+the &ldquo;<a href="#Settings">Settings</a>&rdquo; page.)
+</p>
+
+<p>
+Users browsing a public account can view logs, plot
+historical charts, and perform trend analyses.  Private
+information, for example comments in log entries, is
+hidden from those browsing the account and, of course,
+public access is entirely read-only.  You are free to
+revoke public access to your account at any time; just
+uncheck the &ldquo;Pseudonym&rdquo; box in the
+&ldquo;<a href="#Settings">Settings</a>&rdquo; page.
+While all public access is via pseudonyms,
+<em>really</em> confident users are perfectly free
+to disclose their pseudonym on a personal Web page or log.
+</p>
+
+<h2><a class="i" name="Feedback">Send feedback message</a></h2>
+
+<p class="centred">
+<img src="dfig/feedback.png" width="512" height="419" alt="Seed Feedback" />
+</p>
+
+<!--
+<p>
+The Hacker's Diet <em>Online</em> is a large, complicated application.
+As of the start of the beta test process, calculated from the number
+of lines of code and an estimate of the relative complexities of the
+Perl and C languages, this application is on the order of twice as
+complicated as the initial 1982 release of AutoCAD, and that doesn't
+take into account the security requirements of a public Web application
+nor the need to run in a &ldquo;stateless&rdquo; transaction-based
+fashion on a distributed server farm.
+</p>
+-->
+
+<p>
+To make this application the best it can be, your problem reports,
+suggestions for improvements, feature requests, reactions to the
+documentation, and general comments are essential.  You can send them
+easily using the Send Feedback page accessible from the
+&ldquo;Utility&rdquo; menu.  Please specify an appropriate category
+for your message.  If you'd like a copy of the feedback message sent
+to the E-mail address for your account, check the box at the bottom.
+</p>
+
+<h1><a name="source" class="i">Source Code</a></h1>
+
+<p>
+The complete source code for The Hacker's Diet <em>Online</em>
+application, written in the Perl language using the
+<a href="http://www.literateprogramming.com/"
+    rel="Target:Fourmilab_HDO_Aux">Literate Programming</a>
+methodology, is available for people with their own Web servers
+who wish to install a private copy, or for developers
+and other curious folks who'd like to look under the hood to see
+how it works or re-use components in other Web applications.
+The source code is in the public domain and may be used in
+any manner without any restrictions whatsoever, but
+<span class="shrill">it is utterly unsupported&mdash;you are
+entirely on your own</span>.  This is a large and reasonably
+complex application: more than 27,000 lines of code and
+documentation, with components in the Perl, JavaScript, Cascading
+Style Sheet, XML Document Type Definition, and LaTeX languages.
+Installing it on a different server requires substantial work
+in changing settings for the server environment and establishing
+the initial database structure.  If you decide to undertake this
+task, <span class="shrill">you'll have to puzzle it out
+yourself</span>&mdash;I cannot offer any assistance.
+</p>
+
+<p>
+The goal of Literate Programming is to create programs which
+can be read as an essay as well as run on a computer.  The process of building
+the program automatically creates a PDF file which contains all
+of the code and documentation.  This document is presently
+in excess of 610 pages, and may be read with any PDF viewer
+application.  The formatting of this document is somewhat
+flawed at present: some long lines and sequences of code
+overflow the page.  I am in the process of cleaning these up
+on a &ldquo;time available&rdquo; basis.
+</p>
+
+<ul class="download">
+    <li><a href="download/1.0/hdiet.pdf" type="application/pdf">Read source code</a>
+        &nbsp; (1.4 Mb PDF)</li>
+    <li><a href="download/1.0/hdiet-1.0.tar.gz">Download source code</a>
+        &nbsp; (2.7 Mb <tt>hdiet-1.0.tar.gz</tt>)</li>
+    <li><a href="http://hdonline-dev.blogspot.com/"
+           rel="Target:Fourmilab_HDO_Aux">Development log</a></li>
+</ul>
+
+<h4 class="nav"><a href="../">Back to <cite>The Hacker's Diet</cite></a></h4>
+<h4 class="nav"><a href="https://www.fourmilab.ch/">Fourmilab Home Page</a></h4>
+
+<p />
+<hr />
+<address>
+by <a href="https://www.fourmilab.ch/">John Walker</a><br />
+</address>
+
+</body>
+</html>

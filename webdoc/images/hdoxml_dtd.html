@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>The Hacker's Diet Online: Hacker's Diet Online XML Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="/hackdiet/online/hdiet.css" type="text/css" />
+<script type="text/javascript" src="/hackdiet/online/hdiet.js">
+</script>
+<meta name="keywords" content="hacker's, diet, online, hacker, john, walker" />
+<meta name="description" content="The Hacker's Diet Online" />
+<meta name="author" content="John Walker" />
+<meta name="robots" content="index" />
+<style type="text/css">
+    table.listing {
+        color: inherit;
+        background-color: #D0D0D0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table.listing td {
+        padding: 6px;
+    }
+
+    table.listing td.titre {
+        color: inherit;
+        background-color: #FFFFA0;
+        text-align: center;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: xx-large;
+    }
+</style>
+</head>
+
+<body onload="externalLinks();">
+
+<table class="title">
+<tr>
+<td class="licon">
+
+<a href="/" class="i"><img src="/images/logo/swlogo.png"
+    class="b0" width="82" height="74"
+    alt="Fourmilab home" />
+</a>
+</td>
+<td align="center" valign="top">
+<a href="/hackdiet"><span class="title1">The Hacker's Diet <em>Online</em></span></a><br />
+<span class="title2">How to lose weight and hair<br />
+through stress and poor nutrition</span>
+</td>
+<td class="ricon">
+<a href="/hackdiet" class="i"><img src="/hackdiet/online/figures/titleicon.png"
+    class="b0" width="82" height="80"
+    alt="The Hacker's Diet Home" /></a>
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h1 class="c">XML Document Type Definition</h1>
+
+<ul>
+    <li><a href="hdoxml.html">XML source listing</a></li>
+    <li><a href="hdoxml_dtd.html">Document type description</a></li>
+    <li><a href="hdoxml_css.html">XML style sheet</a></li>
+</ul>
+
+<table class="listing">
+<tr><td class="titre">hackersdiet.dtd</td></tr>
+<tr>
+<td>
+<pre>
+&lt;!--              The Hacker's Diet Online
+            http://www.fourmilab.ch/hackdiet/online/
+
+             XML Database Document Type Definition
+
+    This definition is cited with a:
+        &lt;!DOCTYPE hackersdiet SYSTEM
+            "https://www.fourmilab.ch/hackdiet/online/hackersdiet.dtd"&gt;
+    declaration in compliant XML files.
+
+--&gt;
+
+    &lt;!-- Root element --&gt;
+
+    &lt;!ELEMENT hackersdiet
+        (epoch?, account?, monthlogs?)
+    &gt;
+
+    &lt;!ATTLIST hackersdiet
+        version     CDATA   #REQUIRED
+    &gt;
+
+    &lt;!ELEMENT epoch                 (#PCDATA)&gt;
+
+    &lt;!ELEMENT account
+        (user?, preferences?, diet-plan?)
+    &gt;
+
+    &lt;!ATTLIST account
+        version     CDATA   #REQUIRED
+    &gt;
+
+    &lt;!ELEMENT monthlogs
+        (monthlog*)
+    &gt;
+
+    &lt;!ATTLIST monthlogs
+        version     CDATA   #REQUIRED
+    &gt;
+
+    &lt;!-- User information.  This element is optional but,
+         if present, must be first in the file. --&gt;
+
+    &lt;!ELEMENT user
+        (login-name?,
+         first-name?,
+         middle-name?,
+         last-name?,
+         e-mail?,
+         height?,
+         account-created?)
+    &gt;
+
+    &lt;!ATTLIST user
+        version     CDATA   #REQUIRED
+    &gt;
+
+    &lt;!ELEMENT login-name            (#PCDATA)&gt;
+    &lt;!ELEMENT first-name            (#PCDATA)&gt;
+    &lt;!ELEMENT middle-name           (#PCDATA)&gt;
+    &lt;!ELEMENT last-name             (#PCDATA)&gt;
+    &lt;!ELEMENT e-mail                (#PCDATA)&gt;
+    &lt;!ELEMENT height                (#PCDATA)&gt;
+    &lt;!ELEMENT account-created       (#PCDATA)&gt;
+
+    &lt;!-- Preferences.  This element is optional but,
+         if present, must be after the user information,
+         if present.  --&gt;
+
+    &lt;!ELEMENT preferences
+        (log-unit?,
+         display-unit?,
+         energy-unit?,
+         current-rung?,
+         decimal-character?)
+    &gt;
+
+    &lt;!ATTLIST preferences
+        version     CDATA   #REQUIRED
+    &gt;
+
+    &lt;!ELEMENT log-unit              (#PCDATA)&gt;
+    &lt;!ELEMENT display-unit          (#PCDATA)&gt;
+    &lt;!ELEMENT energy-unit           (#PCDATA)&gt;
+    &lt;!ELEMENT current-rung          (#PCDATA)&gt;
+    &lt;!ELEMENT decimal-character     (#PCDATA)&gt;
+
+    &lt;!-- Diet plan.  This element is optional but,
+         if present, must be after the preferences,
+         if present.  --&gt;
+
+    &lt;!ELEMENT diet-plan
+        (calorie-balance?,
+         start-weight?,
+         goal-weight?,
+         start-date?,
+         show-plan?)
+    &gt;
+
+    &lt;!ATTLIST diet-plan
+        version     CDATA   #REQUIRED
+    &gt;
+
+    &lt;!ELEMENT calorie-balance       (#PCDATA)&gt;
+    &lt;!ELEMENT start-weight          (#PCDATA)&gt;
+    &lt;!ELEMENT goal-weight           (#PCDATA)&gt;
+    &lt;!ELEMENT start-date            (#PCDATA)&gt;
+    &lt;!ELEMENT show-plan             (#PCDATA)&gt;
+
+    &lt;!-- Monthly log.  Any number of monthly logs may
+         appear, in any order. --&gt;
+
+    &lt;!ELEMENT monthlog
+        (properties, days)
+    &gt;
+
+    &lt;!ATTLIST monthlog
+        version     CDATA   #REQUIRED
+    &gt;
+
+    &lt;!ELEMENT properties
+        (year,
+         month,
+         weight-unit,
+         trend-carry-forward?,
+         last-modified?)
+    &gt;
+
+    &lt;!ELEMENT year                  (#PCDATA)&gt;
+    &lt;!ELEMENT month                 (#PCDATA)&gt;
+    &lt;!ELEMENT weight-unit           (#PCDATA)&gt;
+    &lt;!ELEMENT trend-carry-forward   (#PCDATA)&gt;
+    &lt;!ELEMENT last-modified         (#PCDATA)&gt;
+
+    &lt;!ELEMENT days
+        (day+)
+    &gt;
+
+    &lt;!ATTLIST days
+        ndays       CDATA   #REQUIRED
+    &gt;
+
+    &lt;!ELEMENT day
+        (date,
+         weight,
+         rung,
+         flag,
+         comment)
+    &gt;
+
+    &lt;!ELEMENT date                  (#PCDATA)&gt;
+    &lt;!ELEMENT weight                (#PCDATA)&gt;
+    &lt;!ELEMENT rung                  (#PCDATA)&gt;
+    &lt;!ELEMENT flag                  (#PCDATA)&gt;
+    &lt;!ELEMENT comment               (#PCDATA)&gt;
+</pre>
+</td>
+</tr>
+</table>
+
+<h3><a href="../hdo.html">Back to The Hacker's Diet <em>Online</em></a></h3>
+<hr />
+
+<p>
+<a href="/"><cite>The Hacker's Diet</cite></a><br />
+by <a href="/">John Walker</a>
+</p>
+
+</body>
+</html>

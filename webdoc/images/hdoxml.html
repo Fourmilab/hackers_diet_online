@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>The Hacker's Diet Online: Hacker's Diet Online XML Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="/hackdiet/online/hdiet.css" type="text/css" />
+<script type="text/javascript" src="/hackdiet/online/hdiet.js">
+</script>
+<meta name="keywords" content="hacker's, diet, online, hacker, john, walker" />
+<meta name="description" content="The Hacker's Diet Online" />
+<meta name="author" content="John Walker" />
+<meta name="robots" content="index" />
+<style type="text/css">
+    table.listing {
+        color: inherit;
+        background-color: #D0D0D0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table.listing td {
+        padding: 6px;
+    }
+
+    table.listing td.titre {
+        color: inherit;
+        background-color: #FFFFA0;
+        text-align: center;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: xx-large;
+    }
+</style>
+</head>
+
+<body onload="externalLinks();">
+
+<table class="title">
+<tr>
+<td class="licon">
+
+<a href="/" class="i"><img src="/images/logo/swlogo.png"
+    class="b0" width="82" height="74"
+    alt="Fourmilab home" />
+</a>
+</td>
+<td align="center" valign="top">
+<a href="/hackdiet"><span class="title1">The Hacker's Diet <em>Online</em></span></a><br />
+<span class="title2">How to lose weight and hair<br />
+through stress and poor nutrition</span>
+</td>
+<td class="ricon">
+<a href="/hackdiet" class="i"><img src="/hackdiet/online/figures/titleicon.png"
+    class="b0" width="82" height="80"
+    alt="The Hacker's Diet Home" /></a>
+</td>
+</tr>
+</table>
+
+<hr />
+
+<h1 class="c">Hacker's Diet <em>Online</em> XML Example</h1>
+
+<ul>
+    <li><a href="2007-02.xml">XML formatted with style sheet</a></li>
+    <li><a href="hdoxml_dtd.html">Document type description</a></li>
+    <li><a href="hdoxml_css.html">XML style sheet</a></li>
+</ul>
+
+<table class="listing">
+<tr><td class="titre">2007-02.xml</td></tr>
+<tr>
+<td>
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-stylesheet type="text/css" href="https://www.fourmilab.ch/hackdiet/online/hackdiet_db.css"?&gt;
+&lt;!DOCTYPE hackersdiet SYSTEM
+        "https://www.fourmilab.ch/hackdiet/online/hackersdiet.dtd"&gt;
+&lt;hackersdiet version="1.0"&gt;
+    &lt;epoch&gt;2007-04-28T19:34:43Z&lt;/epoch&gt;
+    &lt;account version="1.0"&gt;
+        &lt;user version="1.0"&gt;
+            &lt;login-name&gt;Example&lt;/login-name&gt;
+            &lt;first-name&gt;Example&lt;/first-name&gt;
+            &lt;middle-name&gt;J.&lt;/middle-name&gt;
+            &lt;last-name&gt;Account&lt;/last-name&gt;
+            &lt;e-mail&gt;chef@ratburger.org&lt;/e-mail&gt;
+            &lt;height&gt;180&lt;/height&gt;
+            &lt;account-created&gt;2007-04-24T19:46:38Z&lt;/account-created&gt;
+        &lt;/user&gt;
+        &lt;preferences version="1.0"&gt;
+            &lt;log-unit&gt;kilogram&lt;/log-unit&gt;
+            &lt;display-unit&gt;kilogram&lt;/display-unit&gt;
+            &lt;energy-unit&gt;calorie&lt;/energy-unit&gt;
+            &lt;current-rung&gt;0&lt;/current-rung&gt;
+            &lt;decimal-character&gt;.&lt;/decimal-character&gt;
+        &lt;/preferences&gt;
+        &lt;diet-plan version="1.0"&gt;
+            &lt;calorie-balance&gt;-500&lt;/calorie-balance&gt;
+            &lt;start-weight&gt;85&lt;/start-weight&gt;
+            &lt;goal-weight&gt;75&lt;/goal-weight&gt;
+            &lt;start-date&gt;2006-03-15T00:00:00Z&lt;/start-date&gt;
+            &lt;show-plan&gt;1&lt;/show-plan&gt;
+        &lt;/diet-plan&gt;
+    &lt;/account&gt;
+    &lt;monthlogs version="1.0"&gt;
+    &lt;monthlog version="1.0"&gt;
+        &lt;properties&gt;
+            &lt;year&gt;2007&lt;/year&gt;
+            &lt;month&gt;2&lt;/month&gt;
+            &lt;weight-unit&gt;kilogram&lt;/weight-unit&gt;
+            &lt;trend-carry-forward&gt;75.0163&lt;/trend-carry-forward&gt;
+            &lt;last-modified&gt;2007-04-28T19:34:15Z&lt;/last-modified&gt;
+        &lt;/properties&gt;
+        &lt;days ndays="28"&gt;
+            &lt;day&gt;
+                &lt;date&gt;1&lt;/date&gt;
+                &lt;weight&gt;75.2&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;&lt;/flag&gt;
+                &lt;comment&gt;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;2&lt;/date&gt;
+                &lt;weight&gt;73.8&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;3&lt;/date&gt;
+                &lt;weight&gt;75.9&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;London&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;4&lt;/date&gt;
+                &lt;weight&gt;74.2&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;&amp;#x41c;&amp;#x43e;&amp;#x441;&amp;#x43a;&amp;#x432;&amp;#x430;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;5&lt;/date&gt;
+                &lt;weight&gt;74.3&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;&lt;/flag&gt;
+                &lt;comment&gt;&amp;#x41c;&amp;#x43e;&amp;#x441;&amp;#x43a;&amp;#x432;&amp;#x430;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;6&lt;/date&gt;
+                &lt;weight&gt;76.3&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;&amp;#x6771;&amp;#x4eac;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;7&lt;/date&gt;
+                &lt;weight&gt;75.8&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;&lt;/flag&gt;
+                &lt;comment&gt;&amp;#x6771;&amp;#x4eac;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;8&lt;/date&gt;
+                &lt;weight&gt;75.1&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;&amp;#x5e73;&amp;#x58e4;&amp;#x76f4;&amp;#x8f44;&amp;#x5e02;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;9&lt;/date&gt;
+                &lt;weight&gt;74.5&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;&amp;#x5e73;&amp;#x58e4;&amp;#x76f4;&amp;#x8f44;&amp;#x5e02;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;10&lt;/date&gt;
+                &lt;weight&gt;74.7&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;&lt;/flag&gt;
+                &lt;comment&gt;&amp;#x5e73;&amp;#x58e4;&amp;#x76f4;&amp;#x8f44;&amp;#x5e02;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;11&lt;/date&gt;
+                &lt;weight&gt;75&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;&amp;#x62a;&amp;#x647;&amp;#x631;&amp;#x627;&amp;#x646;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;12&lt;/date&gt;
+                &lt;weight&gt;74&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;&amp;#x62a;&amp;#x647;&amp;#x631;&amp;#x627;&amp;#x646;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;13&lt;/date&gt;
+                &lt;weight&gt;75.5&lt;/weight&gt;
+                &lt;rung&gt;&lt;/rung&gt;
+                &lt;flag&gt;&lt;/flag&gt;
+                &lt;comment&gt;&amp;#x637;&amp;#x631;&amp;#x627;&amp;#x628;&amp;#x644;&amp;#x633;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;14&lt;/date&gt;
+                &lt;weight&gt;74.3&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;&amp;#x637;&amp;#x631;&amp;#x627;&amp;#x628;&amp;#x644;&amp;#x633;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;15&lt;/date&gt;
+                &lt;weight&gt;74.5&lt;/weight&gt;
+                &lt;rung&gt;&lt;/rung&gt;
+                &lt;flag&gt;&lt;/flag&gt;
+                &lt;comment&gt;Gen&amp;#xe8;ve&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;16&lt;/date&gt;
+                &lt;weight&gt;73.9&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;&lt;/flag&gt;
+                &lt;comment&gt;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;17&lt;/date&gt;
+                &lt;weight&gt;74.1&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;18&lt;/date&gt;
+                &lt;weight&gt;75.6&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;19&lt;/date&gt;
+                &lt;weight&gt;74.6&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;&lt;/flag&gt;
+                &lt;comment&gt;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;20&lt;/date&gt;
+                &lt;weight&gt;75.3&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;21&lt;/date&gt;
+                &lt;weight&gt;74.8&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;&lt;/flag&gt;
+                &lt;comment&gt;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;22&lt;/date&gt;
+                &lt;weight&gt;74.5&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;23&lt;/date&gt;
+                &lt;weight&gt;75.4&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;&lt;/flag&gt;
+                &lt;comment&gt;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;24&lt;/date&gt;
+                &lt;weight&gt;74.9&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;25&lt;/date&gt;
+                &lt;weight&gt;75&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;26&lt;/date&gt;
+                &lt;weight&gt;74.9&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;&lt;/flag&gt;
+                &lt;comment&gt;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;27&lt;/date&gt;
+                &lt;weight&gt;75.4&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;1&lt;/flag&gt;
+                &lt;comment&gt;&lt;/comment&gt;
+            &lt;/day&gt;
+            &lt;day&gt;
+                &lt;date&gt;28&lt;/date&gt;
+                &lt;weight&gt;75.3&lt;/weight&gt;
+                &lt;rung&gt;36&lt;/rung&gt;
+                &lt;flag&gt;&lt;/flag&gt;
+                &lt;comment&gt;&lt;/comment&gt;
+            &lt;/day&gt;
+        &lt;/days&gt;
+    &lt;/monthlog&gt;
+    &lt;/monthlogs&gt;
+&lt;/hackersdiet&gt;
+</pre>
+</td>
+</tr>
+</table>
+
+<h3><a href="../hdo.html">Back to The Hacker's Diet <em>Online</em></a></h3>
+<hr />
+
+<p>
+<a href="/hackdiet/"><cite>The Hacker's Diet</cite></a><br />
+by <a href="/">John Walker</a>
+</p>
+
+</body>
+</html>

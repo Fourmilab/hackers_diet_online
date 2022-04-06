@@ -1,0 +1,601 @@
+
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+
+    a:link, a:visited {
+        background-color: inherit;
+        color: rgb(0%, 0%, 80%);
+        text-decoration: none;
+    }
+
+    a:hover  {
+        background-color: rgb(30%, 30%, 100%);
+        color: rgb(100%, 100%, 100%);
+    }
+
+    a:active {
+        color: rgb(100%, 0%, 0%);
+        background-color: rgb(30%, 30%, 100%);
+    }
+
+    a.i:link, a.i:visited, a.i:hover {
+        background-color: inherit;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    h1.c, h2.c {
+        text-align: center;
+    }
+
+    h1.monthyear, h1.pr_monthyear, h1.pr_mo_monthyear, h1.mo_monthyear {
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+    }
+    
+    h3.acct_category {
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    h3.browsing {
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+        color: #FFFFFF;
+        background-color:  #00A000;
+        width: 66%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 2px;
+        padding-bottom: 3px;
+    }
+
+    h3.warning {
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: justify;
+        color: #000000;
+        background-color:  #F0F000;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .monthyear span {
+        background-color: #0000FF;
+        color: #FFFF00;
+        border-width: 4px;
+        border-color: #8080FF;
+        border-style: outset;
+        padding: 6px;
+    }
+
+    span.title1 {
+        font-size: x-large;
+    }
+
+    span.title2 {
+        font-size: large;
+        font-style: italic;
+    }
+
+    .justified {
+        text-align: justify;
+    }
+
+    .centred {
+        text-align: center;
+    }
+
+    p.acct_summary {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    p.build {
+        text-align: right;
+        font-family: sans-serif;
+        font-size: smaller;
+        color: #909090;
+        background-color: inherit;
+    }
+
+    span.imported {
+        background-color: #FFFFFF;
+        color: inherit;
+    }
+
+    span.notentry {
+        background-color: #FFFF00;
+        color: inherit;
+    }
+
+    span.noparse {
+        background-color: #FFA0A0;
+        color: inherit;
+    }
+
+    span.conflict {
+        background-color: #A0FFFF;
+        color: inherit;
+    }
+
+    span.administrator {
+        color: #00A000;
+        background-color: inherit;
+    }
+
+    span.shrill {
+        color: #FF0000;
+        background-color: inherit;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .darwin {
+        /* Why not use background-image?  Because it doesn't work
+           with Exploder (neither 6 nor 7).  See Microsoft Krap Bulletin 322240:
+               http://support.microsoft.com/kb/322240  */
+        background: url(/hackdiet/online/figures/darwin.png);
+    }
+
+    fieldset {
+        padding: .5em;
+        background: white;
+        border: 1px dotted #9090FF;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: .5em;
+    }
+
+    fieldset legend {
+        color: #FFFFFF;
+        background-color: #9090FF;
+        font-size: smaller;
+        padding: .1ex .5ex;
+        border-right: 1px solid gray;
+        border-bottom: 1px solid gray;
+        font-weight: bold;
+    }
+
+    input {
+        vertical-align: middle;
+    }
+
+    input.reset {
+        text-align: center;
+    }
+
+    input.default {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    img.b0 {
+        border: 0px;
+    }
+
+    div.canvas {
+        border: 0px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100px;
+        width: 100px;
+        visibility: hidden;
+    }
+
+    li.skip {
+        margin-top: 1ex;
+    }
+
+    ul.goofs {
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: justify;
+        color: #FF0000;
+        background-color:  inherit;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p.mlog_buttons {
+        text-align: center;
+    }
+
+    p.trendan {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    span.accesskey {
+        text-decoration: underline;
+    }
+
+    span.required {
+        background-color: inherit;
+        color: #FF0000;
+        font-weight: bold;
+    }
+
+    h4.nav {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+
+    div.plog_subsequent {
+        page-break-before: always;
+    }
+    
+    h1.plog {
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    
+    h2.plog {
+        margin-top: 0px;
+        text-align: center;
+    }
+    
+    table.plog {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    table.plog tr.heading {
+        font-weight: bold;
+    }
+    
+    table.plog th.h1 {
+        text-align: center;
+    }
+    
+    table.plog th.h7 {
+        text-align: center;
+        width: 33em;
+    }
+    
+    table.plog th.c1 {
+        text-align: right;
+        width: 2em;
+    }
+    
+    table.plog td.s1 {
+        width: 0.5em;
+    }
+    
+    table.plog td.c2 {
+        text-align: left;
+        width: 2em;
+    }
+    
+    table.plog td.s2 {
+        width: 1em;
+    }
+    
+    table.plog td.c3 {
+        border-bottom: 1px solid black;
+        width: 3em;
+    }
+    
+    table.plog td.s3 {
+        width: 1em;
+    }
+    
+    table.plog td.c4 {
+        border-bottom: 1px solid black;
+        width: 3em;
+    }
+    
+    table.plog td.s4 {
+        width: 1em;
+    }
+    
+    table.plog td.c5 {
+        border-bottom: 1px solid black;
+        width: 2em;
+    }
+    
+    table.plog td.s5 {
+        width: 1em;
+    }
+    
+    table.plog td.c6 {
+        border-bottom: 1px solid black;
+        width: 33em;
+    }
+
+    
+    table.title {
+        width: 100%;
+    }
+
+    table.title td.licon {
+        width: 90px;
+        text-align: left;
+    }
+
+    table.title td.ricon {
+        width: 90px;
+        text-align: right;
+    }
+
+
+    
+    table.login {
+        background-color: #E0E0FF;
+        color: #000000;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table.login th {
+        text-align: left;
+        padding-right: 1em;
+    }
+
+
+    
+    table.mlog, table.mo_mlog {
+        background-color: #D0D0D0;
+        color: #000000;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    table.pr_mlog, table.pr_mo_mlog {
+        margin-left: auto;
+        margin-right: auto;
+        border: thin solid;
+        border-collapse: collapse;
+    }
+
+    table.pr_mlog td, table.pr_mlog th, table.pr_mo_mlog td, table.pr_mo_mlog th {
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
+
+    td.r {
+        text-align: right;
+    }
+
+    span.r {
+        color: #FF0000;
+        background-color: #D0D0D0;
+    }
+
+    span.bk {
+        color: #000000;
+        background-color: #D0D0D0;
+    }
+
+    span.g {
+        color: #00A000;
+        background-color: #D0D0D0;
+    }
+
+    span.pr_r {
+        color: #FF0000;
+        background-color: inherit;
+    }
+    span.pr_bk {
+        color: #000000;
+        background-color: inherit;
+    }
+
+    span.pr_g {
+        color: #00A000;
+        background-color: inherit;
+    }
+
+
+    
+    table.navbar {
+        background-color: #6060FF;
+        color: #FFFFFF;
+        width: 100%;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    table.navbar td:first-child {
+        border-left: none;
+        text-align: center;
+    }
+
+   table.navbar td {
+        border-left: 2px solid #FFFFFF;
+        text-align: center;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    table.navbar td.active {
+        color: #FFFF60;
+        background-color: #6060FF;
+    }
+
+    table.navbar td.disabled {
+        color: #D0D0D0;
+        background-color: #6060FF;
+    }
+
+    table.navbar td.pad {
+        width: 99%;
+    }
+
+    a.navbar:link, a.navbar:visited {
+        background-color: inherit;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    a.navbar:hover  {
+        background-color: #30D030;
+        color: inherit;
+    }
+
+    a.navbar:active {
+        color: #FF3030;
+        background-color: #30D030;
+    }
+
+
+    
+    table.trendan {
+        background-color: #D0D0D0;
+        color: #000000;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table.trendan td.w, td.e {
+        text-align: center;
+    }
+
+    table.trendan th.custitle {
+        background-color: #E0E0FF;
+        color: #000000;
+        border-left-style: none;
+        border-right-style: none;
+     }
+
+    table.trendan th {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+
+    
+    table.list_of_calendars {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table.calendar {
+        margin: 16px;
+        color: inherit;
+        background-color: #E0E0E0;
+   }
+
+    table.calendar th {
+        font-size: larger;
+    }
+
+    table.calendar td {
+        padding: 4px;
+    }
+
+    
+    
+    td.monospace {
+        font-family: monospace;
+        font-size: smaller;
+    }
+
+
+    
+    table.feedback {
+        width: 80%;
+        color: inherit;
+        background-color: #E0E0E0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table.feedback th.t {
+        vertical-align: top;
+    }
+
+    .preview {
+        padding: 8px;
+        background-color: #FFFFA0;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.spell_ok {
+        background-color: #00C000;
+        color: #FFFFFF;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    div.spell_ok h4 {
+        padding-top: 2px;
+        padding-bottom: 4px;
+        font-family: sans-serif;
+    }
+
+    div.spell_dubieties {
+        background-color: #FFA0A0;
+        color: inherit;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    div.spell_dubieties h4 {
+        padding-top: 2px;
+        font-family: sans-serif;
+        margin-bottom: 0px;
+    }
+
+    
+    
+    table.global_stats {
+        background-color: #D0D0D0;
+        color: #000000;
+        border: 3px ridge;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+    }
+
+    table.global_stats td {
+        text-align: right;
+        border: 3px ridge;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    table.global_stats td.c {
+        text-align: center;
+    }
+
+    table.global_stats th.l {
+        text-align: left;
+        border: 3px ridge;
+        padding-right: 1em;
+    }
+
+    table.global_stats th.l {
+        border-right: none;
+    }
+    
+    table.global_stats th.blr {
+        border-left: 3px ridge;
+        border-right: 3px ridge;
+    }
+    
+    table.global_stats th.bl {
+        border-left: 3px ridge;
+    }
+
+

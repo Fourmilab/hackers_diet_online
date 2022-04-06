@@ -1,0 +1,280 @@
+
+    hackersdiet {
+        display: block;
+        text-align: center;
+    }
+
+    hackersdiet:before {
+        content: "Hacker's Diet Online Database Export";
+        font-size: xx-large;
+        font-family: sans-serif;
+    }
+
+    hackersdiet * {
+        padding-left: 8%;
+    }
+
+    epoch {
+        display: block;
+        margin-top: 1em;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: larger;
+    }
+
+    epoch:before {
+        display: inline;
+        content: "Epoch: ";
+    }
+
+    account {
+        display: block;
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    account:before {
+        content: "Account Information";
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: large;
+    }
+
+    user {
+        display: block;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    user:before {
+        display: block;
+        content: "User:";
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: larger;
+    }
+
+    user * {
+        display: block;
+    }
+
+    user *:before {
+        font-weight: bolder;
+        margin-right: 1em;
+    }
+
+    user login-name:before {
+        content: "Account name:";
+    }
+
+    user first-name:before {
+        content: "First name:";
+    }
+
+    user middle-name:before {
+        content: "Middle name:";
+    }
+
+    user last-name:before {
+        content: "Last name:";
+    }
+
+    user e-mail:before {
+        content: "E-mail address:";
+    }
+
+    user height:before {
+        content: "Height:";
+    }
+
+    user height:after {
+        content: " cm";
+    }
+
+    user account-created:before {
+        content: "Account created:";
+    }
+
+    preferences {
+        display: block;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    preferences:before {
+        display: block;
+        content: "Preferences:";
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: larger;
+    }
+
+    preferences * {
+        display: block;
+    }
+
+    preferences *:before {
+        font-weight: bolder;
+        margin-right: 1em;
+    }
+
+    preferences log-unit:before {
+        content: "Log weight unit:";
+    }
+
+    preferences display-unit:before {
+        content: "Display weight unit:";
+    }
+
+    preferences energy-unit:before {
+        content: "Energy unit:";
+    }
+
+    preferences current-rung:before {
+        content: "Current rung:";
+    }
+
+    preferences decimal-character:before {
+        content: "Decimal character:";
+    }
+
+    diet-plan {
+        display: block;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    diet-plan:before {
+        display: block;
+        content: "Diet Plan:";
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: larger;
+    }
+
+    diet-plan * {
+        display: block;
+    }
+
+    diet-plan *:before {
+        font-weight: bolder;
+        margin-right: 1em;
+    }
+
+    diet-plan calorie-balance:before {
+        content: "Calorie balance:";
+    }
+
+    diet-plan start-weight:before {
+        content: "Starting weight:";
+    }
+
+    diet-plan goal-weight:before {
+        content: "Goal weight:";
+    }
+
+    diet-plan start-date:before {
+        content: "Start date:";
+    }
+
+    diet-plan show-plan:before {
+        content: "Show plan in charts:";
+    }
+
+    monthlogs {
+        display: block;
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    monthlogs:before {
+        content: "Monthly Logs";
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: large;
+    }
+
+    monthlog {
+        display: block;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    monthlog * {
+        display: block;
+    }
+
+    monthlog *:before {
+        font-weight: bolder;
+        margin-right: 1em;
+    }
+
+    monthlog properties {
+        display: block;
+        background-color: #E0E0E0;
+        width: 75%;
+    }
+
+    monthlog year:before {
+        content: "Year:";
+    }
+
+    monthlog month:before {
+        content: "Month:";
+    }
+
+    monthlog weight-unit:before {
+        content: "Weight unit:";
+    }
+
+    monthlog trend-carry-forward:before {
+        content: "Trend carry-forward:";
+    }
+
+    monthlog last-modified:before {
+        content: "Last modified:";
+    }
+
+
+    monthlog last-modified {
+        margin-bottom: 1ex;
+    }
+
+
+    monthlog days {
+        display: table;
+    }
+
+    monthlog day {
+        display: table-row;
+    }
+
+    monthlog day * {
+        display: table-cell;
+    }
+
+    monthlog day date {
+        text-align: right;
+        width: 2em;
+    }
+
+    monthlog day weight {
+        text-align: right;
+        width: 4em;
+   }
+
+    monthlog day rung {
+        text-align: right;
+        width: 4em;
+    }
+
+    monthlog day flag {
+        text-align: right;
+        width: 1em;
+    }
+
+    monthlog day comment {
+        text-align: left;
+        padding-left: 48px;
+    }

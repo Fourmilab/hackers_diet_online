@@ -1,0 +1,125 @@
+
+
+WEBDIR = DEVELOPMENT/Web
+
+CGIDIR = DEVELOPMENT/Cgi
+
+EXEDIR = DEVELOPMENT/Exe
+
+WEBDIR_PRODUCTION = PRODUCTION/Web
+
+CGIDIR_PRODUCTION = PRODUCTION/Cgi
+
+EXEDIR_PRODUCTION = PRODUCTION/Exe
+
+PROGRAMS = jig.pl bump
+
+PERL = perl -I.
+
+duh:
+        @echo "Please choose: check dist publish test weblint"
+
+
+jig.pl:    hdiet.w
+        @echo -n 'Build '
+        @./bump buildno.txt
+        @date -u '+%F %R %Z' >buildtime.txt
+        nuweb hdiet
+        chmod 755 $(PROGRAMS)
+        unexpand -a <Makefile.mkf >Makefile
+
+
+
+dist:
+        rm -f hdiet.tar hdiet-*.tar.gz
+        tar cfv hdiet.tar hdiet.w Makefile bump HDiet buildno.txt buildtime.txt wz_jsgraphics.js
+        rm -rf Sdist
+        mkdir Sdist
+        ( cd Sdist ; tar xfv ../hdiet.tar )
+        ( cd Sdist ; make clean )
+        ( cd Sdist ; make check )
+        ( cd Sdist ; make pdf )
+        ( cd Sdist ; tar cfvz hdiet-1.0.tar.gz hdiet.w jig.pl \
+                HackDiet.pl HackDietBadge.pl Makefile \
+                bump buildno.txt buildtime.txt \
+                webapp.html hdiet.tex hdiet.pdf \
+                HDiet \
+                hdiet.css hdiet_handheld.css hdiet.js wz_jsgraphics.js \
+                hackdiet_db.css hackersdiet.dtd )
+        rm -f hdiet.tar
+
+
+
+fourmilab:
+        rm -f fourmilab.tar fourmilab-*.tar.gz
+        tar cfv fourmilab.tar hdiet.w Makefile bump HDiet buildno.txt buildtime.txt wz_jsgraphics.js
+        rm -rf Fourmilab
+        mkdir Fourmilab
+        ( cd Fourmilab ; tar xfv ../fourmilab.tar )
+        ( cd Fourmilab ; $(PERL) ../Fourmilate.pl hdiet.w >hdiet.w1 ; mv hdiet.w1 hdiet.w )
+        ( cd Fourmilab ; make clean )
+        ( cd Fourmilab ; make check )
+        ( cd Fourmilab ; make pdf )
+        ( cd Fourmilab ; tar cfvz hdiet-1.0.tar.gz hdiet.w jig.pl \
+            HackDiet.pl HackDietBadge.pl Makefile \
+            bump buildno.txt buildtime.txt \
+            webapp.html hdiet.tex hdiet.pdf \
+            HDiet \
+            hdiet.css hdiet_handheld.css hdiet.js wz_jsgraphics.js \
+            hackdiet_db.css hackersdiet.dtd )
+        rm -f fourmilab.tar
+
+
+
+
+viewman: jig.pl
+        pod2man hdiet.pl >ZZhdiet.1
+        groff -X -man ZZhdiet.1
+        rm -f ZZhdiet.1
+
+pdf:
+        nuweb -r hdiet
+        xelatex hdiet
+        nuweb -r hdiet
+        xelatex hdiet
+        xelatex hdiet
+
+viewpdf:
+        evince hdiet.pdf
+
+
+
+check:  $(PROGRAMS)
+        $(PERL) -c HackDiet.pl
+        $(PERL) -c HDiet/Aggregator.pm
+        $(PERL) -c HDiet/Cluster.pm
+        $(PERL) -c HDiet/ClusterSync.pl
+        $(PERL) -c HDiet/cookie.pm
+        $(PERL) -c HDiet/hdCSV.pm
+        $(PERL) -c HDiet/history.pm
+        $(PERL) -c HDiet/html.pm
+        $(PERL) -c HDiet/Julian.pm
+        $(PERL) -c HDiet/monthlog.pm
+        $(PERL) -c HDiet/pubname.pm
+        $(PERL) -c HDiet/session.pm
+        $(PERL) -c HDiet/trendfit.pm
+        $(PERL) -c HDiet/user.pm
+        $(PERL) -c HDiet/xml.pm
+        $(PERL) -c HackDietBadge.pl
+        $(PERL) -c jig.pl
+        weblint webapp.html
+
+test:   $(PROGRAMS)
+        $(PERL) jig.pl --verbose --test
+
+weblint:    jig.pl
+        weblint webapp.html
+
+
+
+clean:
+        rm -f hdiet.dvi hdiet.toc hdiet.aux hdiet.log Makefile.mkf hdiet.pdf HDiet/*.pm jig.pl
+
+cvsclean:  clean
+        rm -f hdiet.pdf jig.pl *.pm hdiet.tex webapp.html
+

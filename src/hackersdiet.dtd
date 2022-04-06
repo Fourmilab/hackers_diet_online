@@ -1,0 +1,156 @@
+
+<!--              The Hacker's Diet Online
+            http://www.fourmilab.ch/hackdiet/online/
+
+             XML Database Document Type Definition
+
+    This definition is cited with a:
+        <!DOCTYPE hackersdiet SYSTEM
+            "http://www.fourmilab.ch/hackdiet/online/hackersdiet.dtd">
+    declaration in compliant XML files.
+
+-->
+
+    <!-- Root element -->
+
+    <!ELEMENT hackersdiet
+        (epoch?, account?, monthlogs?)
+    >
+
+    <!ATTLIST hackersdiet
+        version     CDATA   #REQUIRED
+    >
+
+    <!ELEMENT epoch                 (#PCDATA)>
+
+    <!ELEMENT account
+        (user?, preferences?, diet-plan?)
+    >
+
+    <!ATTLIST account
+        version     CDATA   #REQUIRED
+    >
+
+    <!ELEMENT monthlogs
+        (monthlog*)
+    >
+
+    <!ATTLIST monthlogs
+        version     CDATA   #REQUIRED
+    >
+
+    <!-- User information.  This element is optional but,
+         if present, must be first in the file. -->
+
+    <!ELEMENT user
+        (login-name?,
+         first-name?,
+         middle-name?,
+         last-name?,
+         e-mail?,
+         height?,
+         account-created?)
+    >
+
+    <!ATTLIST user
+        version     CDATA   #REQUIRED
+    >
+
+    <!ELEMENT login-name            (#PCDATA)>
+    <!ELEMENT first-name            (#PCDATA)>
+    <!ELEMENT middle-name           (#PCDATA)>
+    <!ELEMENT last-name             (#PCDATA)>
+    <!ELEMENT e-mail                (#PCDATA)>
+    <!ELEMENT height                (#PCDATA)>
+    <!ELEMENT account-created       (#PCDATA)>
+
+    <!-- Preferences.  This element is optional but,
+         if present, must be after the user information,
+         if present.  -->
+
+    <!ELEMENT preferences
+        (log-unit?,
+         display-unit?,
+         energy-unit?,
+         current-rung?,
+         decimal-character?)
+    >
+
+    <!ATTLIST preferences
+        version     CDATA   #REQUIRED
+    >
+
+    <!ELEMENT log-unit              (#PCDATA)>
+    <!ELEMENT display-unit          (#PCDATA)>
+    <!ELEMENT energy-unit           (#PCDATA)>
+    <!ELEMENT current-rung          (#PCDATA)>
+    <!ELEMENT decimal-character     (#PCDATA)>
+
+    <!-- Diet plan.  This element is optional but,
+         if present, must be after the preferences,
+         if present.  -->
+
+    <!ELEMENT diet-plan
+        (calorie-balance?,
+         start-weight?,
+         goal-weight?,
+         start-date?,
+         show-plan?)
+    >
+
+    <!ATTLIST diet-plan
+        version     CDATA   #REQUIRED
+    >
+
+    <!ELEMENT calorie-balance       (#PCDATA)>
+    <!ELEMENT start-weight          (#PCDATA)>
+    <!ELEMENT goal-weight           (#PCDATA)>
+    <!ELEMENT start-date            (#PCDATA)>
+    <!ELEMENT show-plan             (#PCDATA)>
+
+    <!-- Monthly log.  Any number of monthly logs may
+         appear, in any order. -->
+
+    <!ELEMENT monthlog
+        (properties, days)
+    >
+
+    <!ATTLIST monthlog
+        version     CDATA   #REQUIRED
+    >
+
+    <!ELEMENT properties
+        (year,
+         month,
+         weight-unit,
+         trend-carry-forward?,
+         last-modified?)
+    >
+
+    <!ELEMENT year                  (#PCDATA)>
+    <!ELEMENT month                 (#PCDATA)>
+    <!ELEMENT weight-unit           (#PCDATA)>
+    <!ELEMENT trend-carry-forward   (#PCDATA)>
+    <!ELEMENT last-modified         (#PCDATA)>
+
+    <!ELEMENT days
+        (day+)
+    >
+
+    <!ATTLIST days
+        ndays       CDATA   #REQUIRED
+    >
+
+    <!ELEMENT day
+        (date,
+         weight,
+         rung,
+         flag,
+         comment)
+    >
+
+    <!ELEMENT date                  (#PCDATA)>
+    <!ELEMENT weight                (#PCDATA)>
+    <!ELEMENT rung                  (#PCDATA)>
+    <!ELEMENT flag                  (#PCDATA)>
+    <!ELEMENT comment               (#PCDATA)>

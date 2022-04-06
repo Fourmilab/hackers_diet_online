@@ -1,0 +1,9 @@
+#! /bin/sh
+
+#   Increment a number kept in a file and echo it
+#   to standard output.
+
+LAST=`cat $1`
+NEXT=`expr $LAST \+ 1`
+echo $NEXT >$1
+echo $NEXT
